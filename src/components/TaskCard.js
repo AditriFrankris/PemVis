@@ -1,8 +1,3 @@
-// ============================================================
-// TaskCard.js  (KOMPONEN ANAK)
-// Menerima data tugas dari komponen induk (App.js) melalui Props:
-// nama, mataKuliah, deskripsi, deadline, status, onToggle, onDelete
-// ============================================================
 import { memo } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { STATUS } from '../reducer/taskReducer';
@@ -41,8 +36,6 @@ function TaskCard({ id, nama, mataKuliah, deskripsi, deadline, status, onToggle,
   );
 }
 
-// memo: TaskCard hanya render ulang jika props-nya berubah.
-// Ini bekerja efektif karena onToggle & onDelete distabilkan dengan useCallback.
 export default memo(TaskCard);
 
 const styles = StyleSheet.create({
