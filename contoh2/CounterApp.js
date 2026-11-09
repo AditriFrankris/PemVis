@@ -1,5 +1,3 @@
-// Contoh jawaban Soal 2: Counter dengan useState
-// Untuk mencoba: ganti isi App.js dengan  `export { default } from './contoh/CounterApp';`
 import { useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
